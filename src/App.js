@@ -17,6 +17,7 @@ function App() {
           <CourseForm />
           <CourseInstanceForm />
         </div>
+        <Divider />
         <Routes>
           <Route path="/" element={<CourseListSection />} />
           <Route path="/course-details/:id" element={<CourseDetails />} />
@@ -26,4 +27,13 @@ function App() {
   );
 }
 
+const Divider = () => {
+  return (
+      <hr
+          style={{ borderTop: "1px solid lightgrey" }}
+      ></hr>
+  );
+};
+
 export default App;
+

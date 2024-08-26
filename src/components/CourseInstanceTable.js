@@ -40,8 +40,8 @@ function CourseInstanceTable({ instances, onView, onDelete }) {
             <td>{instance.year}-{instance.semester}</td>
             <td>{instance.course_code}</td>
             <td>
-              <button onClick={() => handleViewDetails(instance.id)}>View Details</button>
-              <button onClick={() => handleDelete(instance.id)}>Delete</button>
+              <button onClick={() => handleViewDetails(instance.id)}>🔍</button>
+              <button onClick={() => handleDelete(instance.id)}>🗑️</button>
             </td>
           </tr>
         ))}

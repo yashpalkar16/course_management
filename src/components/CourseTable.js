@@ -26,8 +26,8 @@ function CourseTable({ courses, onViewDetails, onDelete }) {
             <td>{course.title}</td>
             <td>{course.code}</td>
             <td>
-              <button onClick={() => handleViewDetails(course.id)}>View Details</button>
-              <button onClick={() => handleDelete(course.id)}>Delete</button>
+              <button onClick={() => handleViewDetails(course.id)}>🔍</button>
+              <button onClick={() => handleDelete(course.id)}>🗑️</button>
             </td>
           </tr>
         ))}
@@ -37,3 +37,7 @@ function CourseTable({ courses, onViewDetails, onDelete }) {
 }
 
 export default CourseTable;
+
+
+
+

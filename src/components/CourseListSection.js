@@ -139,6 +139,7 @@ function CourseListSection() {
           onDelete={deleteCourse}           // Pass the delete function
         />
       )}
+      <Divider1 />
       <div className="filter-section">
         <input
           type="number"
@@ -172,4 +173,13 @@ function CourseListSection() {
   );
 }
 
+const Divider1 = () => {
+  return (
+      <hr
+          style={{ borderTop: "1px solid lightgrey" }}
+      ></hr>
+  );
+};
+
 export default CourseListSection;
+
